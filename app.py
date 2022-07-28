@@ -37,7 +37,7 @@ def display_question(qid):
 
     if (qid != len(responses)):
         qid =len(responses)
-        # flash ("Survey questions needs to be answered in order")
+        # flash ("Survey questions needs to be answered in order") QQ
         return redirect (f"/question/{len(responses)}")
 
     return render_template("questions.html", q=survey.questions[qid])
